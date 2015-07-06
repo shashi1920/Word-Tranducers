@@ -11,7 +11,7 @@ def rule2(word):
     word = re.sub(ur"ɳ", u'n', word)
     return word
 def rule3(word):
-    word = re.sub(ur"\s*^i", u'e', word)
+    word = re.sub(ur"\s*^i", u'e:', word)
     word = re.sub(ur"əkeː\s+$", u'kərə', word)
     return word
 def rule4(word):
@@ -44,4 +44,5 @@ inp= rule5(inp)
 inp= rule6(inp)
 inp= rule7(inp)
 inp= rule8(inp)
+
 print(inp)
